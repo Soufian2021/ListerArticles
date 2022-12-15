@@ -22,14 +22,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         articles = new ArrayList<>();
-        articles.add(new Article(1, "pain", 2.));
-        articles.add(new Article(2, "sucre", 10.));
-        articles.add(new Article(3, "huile", 23.));
-        articles.add(new Article(4, "café", 12.));
+        articles.add(new Article(1, "article1", 2.));
+        articles.add(new Article(2, "article2", 13.));
+        articles.add(new Article(3, "article3", 73.));
+        articles.add(new Article(4, "article4", 32.));
 
-        //for (Article a:arts) {
-        //Toast.makeText(this, a.toString(), Toast.LENGTH_SHORT).show();
-        //}
 
         ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_main, arts);
         ListView listView = (ListView) findViewById(R.id.articlesList);
